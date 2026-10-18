@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#240d1a">
+<meta name="description" content="Uma surpresa especial de aniversário para Nicolly.">
+<title>Para Nicolly ❤️</title>
+<style>
+:root{--bg:#180b14;--wine:#5d1739;--rose:#f3a7bf;--cream:#fff5f0;--muted:#e7cbd5;--gold:#f5d8a2}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at top,#54203d 0%,#24101e 42%,var(--bg) 100%);color:var(--cream);font-family:Georgia,"Times New Roman",serif;line-height:1.8;overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:32px 20px;position:relative;isolation:isolate}
+.hero:before,.hero:after{content:"";position:absolute;width:230px;height:230px;border:1px solid #f3a7bf44;border-radius:50%;z-index:-1;animation:pulse 5s ease-in-out infinite}
+.hero:after{width:310px;height:310px;animation-delay:1.2s}
+.hero-inner{max-width:720px;animation:rise 1.2s both}
+.eyebrow{letter-spacing:.25em;text-transform:uppercase;color:var(--rose);font:12px/1.5 Arial,sans-serif}
+h1{font-size:clamp(2.8rem,10vw,6rem);line-height:1.02;font-weight:normal;margin:.3em 0;color:#fff0f5;text-shadow:0 0 28px #ff9fc055}
+.hero p{color:var(--muted);font-size:clamp(1rem,3vw,1.3rem)}
+.heart-mark{font-size:2.5rem;display:inline-block;animation:heartbeat 1.8s infinite}
+.primary,.music-btn,.top-btn{border:1px solid #f3a7bf88;background:#7d2851;color:#fff7fa;border-radius:999px;padding:13px 22px;box-shadow:0 8px 30px #0003;transition:transform .2s,background .2s}
+.primary:hover,.music-btn:hover,.top-btn:hover{transform:translateY(-2px);background:#963762}
+main{max-width:850px;margin:auto;padding:20px 20px 100px}
+.toolbar{position:sticky;top:12px;z-index:5;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 auto 32px}
+.music-btn,.top-btn{font:13px Arial,sans-serif;padding:10px 15px;background:#28111fdd;backdrop-filter:blur(10px)}
+.letter{background:linear-gradient(145deg,#fff8f2,#f8e5e8);color:#482035;border:1px solid #f4c6d5;border-radius:24px;padding:clamp(24px,6vw,58px);box-shadow:0 28px 90px #0005;position:relative;overflow:hidden}
+.letter:before{content:"";position:absolute;inset:12px;border:1px solid #d9a4b8;border-radius:17px;pointer-events:none}
+.section{position:relative;padding:10px 0 24px;margin-bottom:16px;border-bottom:1px solid #d9a4b866}
+.section:last-child{border:0;margin-bottom:0}
+h2{font-size:clamp(1.5rem,5vw,2.2rem);font-weight:normal;line-height:1.25;color:#8c3158;margin:0 0 18px}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+.emphasis{color:#9e315e;font-style:italic}
+.sticker{font-family:Arial,sans-serif;font-size:1.15rem;letter-spacing:.25em;margin:0 0 14px}
+.signature{font-size:clamp(1.4rem,4vw,2rem);color:#8c3158;line-height:1.35;margin-top:22px}
+.final{min-height:60vh;display:grid;place-items:center;text-align:center;padding:60px 12px}
+.final-card{max-width:680px}
+.final h2{font-size:clamp(2.2rem,7vw,4.2rem);color:#ffe5ef}
+.final p{color:#f0cbd9}
+.final .signature{color:var(--gold)}
+footer{text-align:center;color:#cda9ba;font:12px Arial,sans-serif;padding:25px}
+.heart{position:fixed;bottom:-40px;z-index:10;pointer-events:none;animation:floatUp linear forwards;filter:drop-shadow(0 0 8px #f3a7bf66)}
+.sparkle{position:absolute;color:#ffd7e4;animation:twinkle 2s ease-in-out infinite}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:none}
+@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{transform:scale(.94);opacity:.35}50%{transform:scale(1.05);opacity:.8}}
+@keyframes heartbeat{0%,100%{transform:scale(1)}12%{transform:scale(1.16)}24%{transform:scale(1)}36%{transform:scale(1.1)}}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(28deg);opacity:0}}
+@keyframes twinkle{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <span class="sparkle" style="top:18%;left:14%">✦</span><span class="sparkle" style="top:25%;right:13%;animation-delay:.8s">✧</span>
+  <div class="hero-inner">
+    <div class="eyebrow">uma pequena surpresa feita com carinho</div>
+    <div class="heart-mark">❤️</div>
+    <h1>Para uma pessoa especial</h1>
+    <p>Para você, Nicolly. Um pedacinho do meu carinho, transformado em palavras.</p>
+    <button class="primary" id="openLetter">Abrir sua cartinha ✨</button>
+    <p style="font-size:.85rem;margin-top:22px">Feito especialmente para o seu dia.</p>
+  </div>
+</header>
+
+<main id="letterStart">
+  <div class="toolbar">
+    <button class="music-btn" id="musicToggle" aria-pressed="false">♫ Ativar musiquinha</button>
+    <button class="top-btn" id="heartBurst">Soltar corações 💞</button>
+    <button class="top-btn" id="backTop">Voltar à capa ↑</button>
+  </div>
+  <article class="letter">
+    <section class="section reveal">
+      <div class="sticker">🎂 🥳 💞</div>
+      <h2>Parabéns, anjo sem asas!</h2>
+      <p>Parabéns, anjo sem asas! ou melhor, bela dormecidaa, kkk. Não sou muito bom com palavras ou escrita, mas hoje é um dia especial para você. Quero desejar um feliz aniversário e expressar que você é uma pessoa incrível, uma das melhores que conheci. Não direi que é a melhor (embora você realmente seja), pois não quero admitir isso.</p>
+    </section>
+    <section class="section reveal">
+      <div class="sticker">🥰 🙄 👀</div>
+      <h2>Hoje você completa 19 anos</h2>
+      <p>Hoje você completa 19 anos 🥳❤️ Tá ficando velha já KKKKKK!</p>
+      <p>Te desejo tudo de bom nessa vida, que você consiga realizar seus sonhos e seja muito feliz! Que nunca faltem motivos pra sorrir e pessoas boas pra te fazer companhia (tipo eu, óbvio 🙄).</p>
+      <p>Espero que seu dia seja tão incrível quanto você! Continue sendo essa pessoa maravilhosa, engraçada e meio doidinha KKKs. Que essa nova fase venha cheia de coisas boas e momentos inesquecíveis. E que eu possa estar presente em alguns deles também, né?</p>
+      <p>Aproveita muito seu dia, você merece tudo de melhor! Feliz aniversário Mb, sua linda!</p>
+    </section>
+    <section class="section reveal">
+      <div class="sticker">🎉 🫶 ❤️ 🎂</div>
+      <h2>Um brinde à sua nova fase</h2>
+      <p>Que venham muitos anos pela frente, cheios de aventuras, histórias pra contar e, claro, muitos memes pra compartilhar. Ah, e não deixe ninguém te chamar de "velha"! Afinal, você é como um bom vinho: melhora com o tempo (ou pelo menos tenta não azedar) kkk te amo</p>
+    </section>
+    <section class="section reveal">
+      <div class="sticker">✨</div>
+      <h2>O direito de comer bolo sem culpa</h2>
+      <p>E tambem hoje é aquele dia especial em que você ganha o direito de comer bolo sem culpa kkk, receber parabéns de pessoas que mal lembravam que você existia e ainda ser chamada de ‘velha’ pelos amigos mais novos. Que sua velinha não acenda só no bolo, mas na sua vida (calma, sem incêndios, ok?). E lembre-se: idade é só um número, mas se passar de 100, vira recordekk! Aproveite seu dia como se amanhã não tivesse dieta. (:</p>
+    </section>
+    <section class="section reveal">
+      <div class="sticker">🌻 💞</div>
+      <h2>Falando sério, agora…</h2>
+      <p>Mas agora, deixando as brincadeiras de lado e falando seriamente, desejo que você aproveite ao máximo, pois hoje é o seu dia. Não permita que nada estrague esse momento especial. E caso não tenha planos de sair ou celebrar com amigos ou familiares, saiba que estou à disposição. Embora eu não seja a melhor companhia do mundo, farei o meu melhor para ser uma boa companhia para você.</p>
+    </section>
+    <section class="section reveal">
+      <div class="sticker">😊</div>
+      <h2>Um ano desde que nos conhecemos</h2>
+      <p>Nós conhecemos há 1 ano, o tempo passou tão rápido, e ao longo desse 1 ano você se tornou uma pessoa significativa para mim. Embora eu ainda sinta que te conheço pouco, já consigo perceber o quão incrível você é. Desejo ter a oportunidade de conhecê-la mais a fundo e descobrir tudo sobre você. Se você me conceder essa chance, ficarei imensamente feliz.</p>
+    </section>
+    <section class="section reveal">
+      <div class="sticker">🌹 🌞</div>
+      <h2>Feliz aniversário, meu anjo!</h2>
+      <p>E mais uma vez, feliz aniversário, meu anjo! Te amo muito; você é extremamente especial. Continue sendo essa pessoa maravilhosa que é. Hoje é um dia dedicado à felicidade e aos sorrisos; brilhe intensamente, mas não tanto a ponto de fazer o Sol sentir inveja! Que sua vida seja sempre uma comédia com um final feliz. Eu amo você!</p>
+      <p class="signature">Com todo o meu amor,<br>seu futuro quase príncipe, quem sabe? ❤️💍</p>
+    </section>
+  </article>
+  <section class="final reveal">
+    <div class="final-card">
+      <div class="heart-mark">💗</div>
+      <h2>Feliz aniversário, Nicolly!</h2>
+      <p>Que seus 19 anos sejam cheios de sorrisos, amor, sonhos realizados e momentos que virem boas lembranças.</p>
+      <p class="signature">Você merece coisas lindas. ❤️</p>
+      <button class="primary" id="finalHearts">Um último montão de corações 💞</button>
+    </div>
+  </section>
+</main>
+<footer>Feito com carinho ❤️ · Uma surpresa para Nicolly</footer>
+<script>
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function hearts(count=18){
+  if(reduceMotion) count=Math.min(count,5);
+  const symbols=['♥','♡','💗','💖','💕'];
+  for(let i=0;i<count;i++){
+    const el=document.createElement('span'); el.className='heart';
+    el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    el.style.left=(Math.random()*100)+'vw';
+    el.style.fontSize=(14+Math.random()*22)+'px';
+    el.style.color=['#f3a7bf','#ffd7e4','#f5d8a2','#ffffff'][Math.floor(Math.random()*4)];
+    el.style.animationDuration=(4+Math.random()*4)+'s';
+    el.style.animationDelay=(Math.random()*.7)+'s';
+    document.body.appendChild(el); setTimeout(()=>el.remove(),9000);
+  }
+}
+document.getElementById('openLetter').addEventListener('click',()=>{
+  document.getElementById('letterStart').scrollIntoView({behavior:reduceMotion?'auto':'smooth'});
+  hearts(24);
+});
+document.getElementById('heartBurst').addEventListener('click',()=>hearts(30));
+document.getElementById('finalHearts').addEventListener('click',()=>hearts(48));
+document.getElementById('backTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:reduceMotion?'auto':'smooth'}));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// Pequena melodia gerada localmente pelo navegador: não precisa baixar arquivo de áudio.
+// Alguns navegadores podem bloquear áudio até o usuário tocar no botão.
+let audioCtx=null, melodyTimer=null, musicOn=false, noteIndex=0;
+const notes=[261.63,329.63,392.00,329.63,293.66,349.23,440.00,349.23];
+function playNote(){
+  if(!audioCtx||!musicOn)return;
+  const now=audioCtx.currentTime;
+  const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+  osc.type='sine'; osc.frequency.value=notes[noteIndex%notes.length];
+  gain.gain.setValueAtTime(0.0001,now);
+  gain.gain.exponentialRampToValueAtTime(0.035,now+.08);
+  gain.gain.exponentialRampToValueAtTime(0.0001,now+.75);
+  osc.connect(gain);gain.connect(audioCtx.destination);
+  osc.start(now);osc.stop(now+.8);noteIndex++;
+}
+const musicButton=document.getElementById('musicToggle');
+musicButton.addEventListener('click',async()=>{
+  if(!audioCtx) audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+  if(audioCtx.state==='suspended') await audioCtx.resume();
+  musicOn=!musicOn;
+  if(musicOn){playNote();melodyTimer=setInterval(playNote,650);musicButton.textContent='♫ Desativar musiquinha';musicButton.setAttribute('aria-pressed','true')}
+  else{clearInterval(melodyTimer);musicButton.textContent='♫ Ativar musiquinha';musicButton.setAttribute('aria-pressed','false')}
+});
+</script>
+</body>
+</html>

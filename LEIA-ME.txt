@@ -1,0 +1,32 @@
+SITE-LIVRO DE ANIVERSÁRIO — NICOLLY ❤️
+
+ARQUIVO PRINCIPAL
+- index.html: site completo (HTML, CSS e JavaScript no mesmo arquivo).
+
+COMO TESTAR NO SEU PC
+1. Extraia o ZIP.
+2. Abra a pasta site_livro_nicolly.
+3. Dê dois cliques em index.html para abrir no navegador.
+4. Teste o botão “Abrir sua cartinha”, a música opcional e os botões de corações.
+
+COMO PUBLICAR GRATUITAMENTE COM GITHUB PAGES
+1. Entre em https://github.com/ e crie uma conta ou faça login.
+2. Crie um repositório novo, por exemplo: carta-para-nicolly.
+3. Envie o arquivo index.html para a raiz do repositório (Add file / Upload files).
+4. Abra Settings > Pages.
+5. Em “Build and deployment”, selecione “Deploy from a branch”.
+6. Escolha a branch “main” e a pasta “/(root)” e salve.
+7. Aguarde a publicação. O GitHub mostrará um endereço parecido com:
+   https://SEU-USUARIO.github.io/carta-para-nicolly/
+8. Abra o endereço no celular para conferir e envie o link para ela.
+
+ALTERNATIVA: NETLIFY DROP
+- Acesse https://app.netlify.com/drop e arraste a pasta que contém index.html (ou um ZIP com o site).
+- Siga as instruções mostradas na tela para publicar e obter um link público. A interface e as condições do serviço podem mudar.
+
+SOBRE A MÚSICA
+- O botão ativa uma melodia suave gerada pelo próprio navegador; não precisa de arquivo MP3.
+- O navegador só começa a tocar depois que a pessoa clicar no botão, por causa das regras de reprodução automática.
+
+OBSERVAÇÃO SOBRE O TEXTO
+- As mensagens do PDF foram reorganizadas em uma página longa. A redação foi mantida próxima ao conteúdo extraído do PDF; confira o site antes de publicar para garantir que emojis, grafia e quebras de frase estão do jeito que você deseja.
